@@ -1,16 +1,36 @@
-body {
+
+#container {
+    width: 100vw;
+    height: 100wh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     }
 #main {
+    width: 100vw;
+    height: 100wh;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid red;
 }
+
 .nav-button {
     display: flex;
     flex-direction: column;
 }
 #nav-bar {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#sidebar {
+    display: flex;
+    flex-direction: column;
+}
+#content {
+    display: flex;
+    flex-direction: row;
 }
