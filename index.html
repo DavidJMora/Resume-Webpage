@@ -10,30 +10,30 @@
     <script src="main.js"></script>
 </head>
 <body id="container">
-    <header id="header">
+    <nav id="nav-bar">
         <button class="nav-button">
             <i class="fas fa-home"></i>
-            <p>HOME</p>
+            <p class="nav-text">HOME</p>
         </button>
         <button class="nav-button">
             <i class="far fa-address-card"></i>
-            <p>RESUME</p>            
+            <p class="nav-text">RESUME</p>            
         </button>
         <button class="nav-button">
             <i class="fas fa-archive"></i>
-            <p>PORTFOLIO</p>
+            <p class="nav-text">PORTFOLIO</p>
         </button>
         <button class="nav-button">
             <i class="fas fa-envelope"></i>
-            <p>CONTACT</p>
+            <p class="nav-text">CONTACT</p>
         </button>
-    </header>
-    <div id="main">
-        <div id="sidebar">
-            <div>
+    </nav>
+    <main id="main">
+        <section id="sidebar">
+            <header>
                 <h1>David Mora</h1>
-            </div>
-            <div>
+            </header>
+            <section id="list" class="list">
                 <ul>
                     <li>Web Developer</li>
                     <li>Veteran</li>
@@ -41,13 +41,14 @@
                     <li>Best Bowler NA</li>
                     <li>Falls up stairs</li>
                 </ul>
-            </div>
-            <footer>
-                <p>&#169;Mora 2019. All rights reserved.</p>
-        </div>
-        <div id="content">
-            <div>
-                <div>
+            </secion>
+            <details>
+                <summary>&#169;Mora 2019. All rights reserved.</summary>
+            </details>
+        </section>
+        <article id="content">
+            <section>
+                <section id="traits" class="list">
                     <h2>
                         <ul>
                             <li>Quicker Learner</li>
@@ -56,19 +57,20 @@
                             <li>Flexible</li>
                         </ul>
                     </h2>
-                </div>
-                <div>
+                </section>
+                <section id="about me">
                     <p>Once upon a time I got into a fight with my pet snake. Within seconds it was obviously I would succumb to its speed and versatility. Then I was given a stroke of luck and the Koolaid Man bursted through my wall and a piece of random debris knocked the snake out. I quickly tied it into a pretzel and laid claim to my domain. Afterwards, I made a business model on the supply and demand for pretzel fried snakes. Unfortunately none such market existed and so now I have begun my quest on manipulating the world's population into liking my food. Wish my luck.</p>
-                </div>
-                <div>
+                </section>
+                <section id="profile">
+                    <img src="./images/profile.jpeg">
+                </section>
+            </section>
+            <footer>
+                <div id="signature">
                     <img src="">
                 </div>
-            <div>
-                <div>
-                    <img src="">
-                </div>
-            </div>
-        </div>
-    </div>
+            </footer>
+        </article>
+    </main>
 </body>
 </html>

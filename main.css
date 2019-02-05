@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-#header {
+#nav-bar {
     display: flex;
     flex-direction: row
 }
