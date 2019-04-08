@@ -9,7 +9,10 @@ const profileInfo = {
 }
 
 const buttons = {
-    
+    home: 'HOME',
+    resume: 'RESUME',
+    portfolio: 'PORTFOLIO',
+    contact: 'CONTACT',
 }
 
 
