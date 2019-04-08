@@ -15,14 +15,25 @@ const buttons = {
     contact: 'CONTACT',
 }
 
-
-
-
-
-
 window.onload = init;
 
 function init() {
+    document.querySelector('#home-text').innerText = buttons.home;
+    document.querySelector('#resume-text').innerText = buttons.resume;
+    document.querySelector('#portfolio-text').innerText = buttons.portfolio;
+    document.querySelector('#contact-text').innerText = buttons.contact;
 
+
+    const home = document.querySelector('#home-button');
+    home.addEventListener('click', homeNav);
+
+    const resume = document.querySelector('#resume-button');
+    resume.addEventListener('click', resumeNav);
+
+    const portfolio = document.querySelector('#portfolio-button');
+    portfolio.addEventListener('click', portfolioNav);
+
+    const contact = document.querySelector('#contact-button');
+    contact.addEventListener('click', contactNav);
 }
 
