@@ -2,6 +2,7 @@ window.onload = init;
 
 function init() {
     populateNavBar();
+    populateSideBar();
 
     const home = document.querySelector('#home-button');
     home.addEventListener('click', homeNav);
@@ -25,5 +26,13 @@ function populateNavBar() {
     document.querySelector('#resume-text').innerText = buttons.resume;
     document.querySelector('#portfolio-text').innerText = buttons.portfolio;
     document.querySelector('#contact-text').innerText = buttons.contact;
+}
+
+function populateSideBar() {
+    const header = document.createElement('h2');
+    header.innerText = profileInfo.name;
+    const name = document.querySelector('#sidebar-header');
+    name.appendChild(header);
+
 }
 
