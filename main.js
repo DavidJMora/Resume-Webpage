@@ -1,6 +1,8 @@
 window.onload = init;
 
 function init() {
+    populateNavBar();
+
     const home = document.querySelector('#home-button');
     home.addEventListener('click', homeNav);
     home.addEventListener('mouseover', hoverHome);
@@ -18,9 +20,10 @@ function init() {
     contact.addEventListener('mouseover', hoverContact);
 }
 
-document.querySelector('#home-text').innerText = buttons.home;
-document.querySelector('#resume-text').innerText = buttons.resume;
-document.querySelector('#portfolio-text').innerText = buttons.portfolio;
-document.querySelector('#contact-text').innerText = buttons.contact;
-
+function populateNavBar() {
+    document.querySelector('#home-text').innerText = buttons.home;
+    document.querySelector('#resume-text').innerText = buttons.resume;
+    document.querySelector('#portfolio-text').innerText = buttons.portfolio;
+    document.querySelector('#contact-text').innerText = buttons.contact;
+}
 
