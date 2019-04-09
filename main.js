@@ -26,14 +26,20 @@ function init() {
 
     const home = document.querySelector('#home-button');
     home.addEventListener('click', homeNav);
+    home.addEventListener('mouseover', hoverHome);
 
     const resume = document.querySelector('#resume-button');
     resume.addEventListener('click', resumeNav);
+    resume.addEventListener('mouseover', hoverResume);
 
     const portfolio = document.querySelector('#portfolio-button');
     portfolio.addEventListener('click', portfolioNav);
+    portfolio.addEventListener('mouseover', hoverPortfolio);
 
     const contact = document.querySelector('#contact-button');
     contact.addEventListener('click', contactNav);
+    contact.addEventListener('mouseover', hoverContact);
 }
+
+
 
