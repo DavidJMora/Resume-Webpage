@@ -41,7 +41,7 @@ li {
 #nav-bar {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: whitesmoke;
     height: 20%;

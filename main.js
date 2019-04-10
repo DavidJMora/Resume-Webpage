@@ -23,31 +23,46 @@ function init() {
 }
 
 function populateNavBar() {
-    document.querySelector('#home-text').innerText = buttons.home;
-    document.querySelector('#resume-text').innerText = buttons.resume;
-    document.querySelector('#portfolio-text').innerText = buttons.portfolio;
-    document.querySelector('#contact-text').innerText = buttons.contact;
+    document.querySelector('#home-text').innerText = data.buttons.home;
+    document.querySelector('#resume-text').innerText = data.buttons.resume;
+    document.querySelector('#portfolio-text').innerText = data.buttons.portfolio;
+    document.querySelector('#contact-text').innerText = data.buttons.contact;
 }
 
 function populateSideBar() {
     const header = document.createElement('h2');
-    header.innerText = profileInfo.name;
+    header.innerText = data.profileInfo.name;
     const name = document.querySelector('#sidebar-header');
     name.appendChild(header);
 
-    const sidebarText = profileInfo.qualifications;
-    sidebarText.forEach(function createLi(words) {
-        const sidebar = document.createElement('li');
-        sidebar.innerText = words;
-        document.querySelector('.sidebar-list').appendChild(sidebar);
+    const qualifications = data.profileInfo.qualifications;
+    qualifications.forEach(function createLi(words) {
+        const sidebarList = document.createElement('li');
+        sidebarList.innerText = words;
+        document.querySelector('.sidebar-list').appendChild(sidebarList);
     });
 
     const footer = document.createElement('summary');
-    footer.innerText = profileInfo.footer;
-    const footer2 = document.querySelector('#sidebar-footer');
-    footer2.appendChild(footer);
+    footer.innerText = data.profileInfo.footer;
+    const footerInfo = document.querySelector('#sidebar-footer');
+    footerInfo.appendChild(footer);
 }
 
 function populateMainText() {
+    const traits = data.profileInfo.traits;
+    traits.forEach(function createLi(words) {
+        const mainBodyList = document.createElement('li');
+        mainBodyList.innerText = words;
+        document.querySelector('#main-list').appendChild(mainBodyList);
+    });
 
+    const bio = document.createElement('p');
+    bio.innerText = data.profileInfo.bio;
+    const bioInfo = document.querySelector('#about-me');
+    bioInfo.appendChild(bio);
+
+    const profilePic = document.createElement('img');
+    profilePic.src = data.profileInfo.profilePic;
+    const mainPic = document.querySelector('#profile-pic');
+    mainPic.appendChild(profilePic);
 }
